@@ -18,3 +18,22 @@
 @import "dialog";
 @import "accordion";
 @import "counter";
+
+:root {
+	--size: 500px;
+	--value: 20%;
+	--stroke-width: 10px;
+	stroke-dashoffset: calc((100% - var(--value)) * pi);
+	stroke-dasharray: calc(100% * pi);
+	stroke-width: var(--stroke-width);
+
+	svg {
+		aspect-ratio: 1;
+		width: var(--size);
+		transform: rotate(-90deg);
+	}
+
+	circle {
+		r: calc(50% - var(--stroke-width));
+	}
+}
