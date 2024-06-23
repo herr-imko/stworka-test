@@ -31,10 +31,11 @@ input.forEach(step => {
 	let axis = (step.angle / 90) % 2 ? 0 : 1
 	let direction = step.angle / 180 >= 1 ? -1 : 1
 	let last = [...path.at(-1)]
+	console.log(typeof (step.length * direction / 10 + last[axis]))
 
-	last[axis] += step.length * direction
+	last[axis] += Math.round(step.length * direction / 10)
 	path.push(last)
 })
 
-document.documentElement.innerText += JSON.stringify(path)
+document.body.innerText += JSON.stringify(path)
 console.log(path)
