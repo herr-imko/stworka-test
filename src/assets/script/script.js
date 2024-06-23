@@ -19,14 +19,14 @@ document.addEventListener('DOMContentLoaded', function () {
 	// toggles()
 })
 
-function cleave() {
-	document.querySelectorAll('input[type=tel]').forEach(input => {
-		new Cleave(input, {
-			phone: true,
-			phoneRegionCode: "RU",
-			delimiter: "-",
-			prefix: "+7",
-			noImmediatePrefix: true
-		})
-	})
-}
+// function cleave() {
+// 	document.querySelectorAll('input[type=tel]').forEach(input => {
+// 		new Cleave(input, {
+// 			phone: true,
+// 			phoneRegionCode: "RU",
+// 			delimiter: "-",
+// 			prefix: "+7",
+// 			noImmediatePrefix: true
+// 		})
+// 	})
+// }

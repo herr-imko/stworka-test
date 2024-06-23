@@ -1,34 +1,41 @@
-// @font-face {
-// 	font-family: "";
-// 	src: url(/src/assets/static/font/);
-// 	font-weight: 500;
-// 	font-display: swap;
-// }
-// @font-face {
-// 	font-family: "";
-// 	src: url(/src/assets/static/font/) format("woff2-variations");
-// 	font-display: swap;
-// 	font-weight: 125 950;
-// 	font-style: normal;
-// }
-body,
-input {
-	@media screen and (max-width: $mobile) {}
-}
+ @font-face {
+ 	font-family: "Inter";
+ 	src: url(/src/assets/static/font/Inter.woff2) format("woff2-variations");
+ 	font-display: swap;
+ 	font-weight: 125 950;
+ 	font-style: normal;
+ }
 
-a {
-	color: inherit;
-}
+ body,
+ input {
+ 	font-family: Inter, sans-serif;
+ }
 
-input[type="text"],
-input[type="password"],
-input[type="email"],
-input[type="tel"],
-input[type="number"],
-textarea {
-	appearance: textfield;
+ a {
+ 	color: inherit;
+ }
 
-	&::-webkit-inner-spin-button {
-		-webkit-appearance: none;
-	}
-}
+ .font-size-xl {
+ 	font-size: 20px;
+ 	line-height: 30px;
+ }
+
+ .font-size-l {
+ 	font-size: 18px;
+ 	line-height: 28px;
+ }
+
+ .font-size-m {
+ 	font-size: 16px;
+ 	line-height: 24px;
+ }
+
+ .font-size-s {
+ 	font-size: 14px;
+ 	line-height: 20px;
+ }
+
+ .font-size-xs {
+ 	font-size: 12px;
+ 	line-height: 18px;
+ }
